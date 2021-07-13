@@ -15,8 +15,8 @@
 
 body{
  background-color: var(--DarkViolet); 
- margin: auto;
- padding: auto;
+ margin: 0%;
+ padding: 0%;
  display: flex;
 }
 
@@ -26,16 +26,16 @@ body{
   background-color: #CCC0D8;
   display:flex;
   flex-direction: row;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
   align-content:center;
   padding:1%;
 }
 
 .logo img{
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   margin-left: 5%;
-  width: 20vw;
+  width: auto;
 }
 
 .frase{
@@ -44,14 +44,13 @@ body{
   font-size: large;
   color:var(--Blue);
   text-align: center;
-  width: 40vw;
+  width: 40%;
   padding-left: 3%;
 }
 
 .menu{
   color: #1E122A;
-  width: 65%;
-  height: 60%;
+  width: auto;
   display: flex;
   flex-direction:row;
   text-decoration: none;
@@ -62,6 +61,7 @@ body{
 .menu li {
   display:inline; 
   color:#1E122A;
+  list-style:none;
 }
 
 .nav-link{
@@ -79,8 +79,8 @@ body{
 
 .pagina{
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: var(--DarkViolet); 
-  margin: auto;
+  background-color: var(--DarkViolet);
+  margin-top: 20%;
   padding: auto;
   justify-content: center;
 }
@@ -148,7 +148,7 @@ body{
 }
 
 .anahi_img{
-  width: 25vw;
+  width: 25%;
   float: left;
   margin: 3%;
 }
@@ -156,7 +156,7 @@ body{
 .quiensoy{
   align-content: center;
   align-self: center;
-  width: 90vw;
+  width: 90%;
   padding-top: 7%;
   margin: 2%;
 }
@@ -184,7 +184,7 @@ body{
 
 .tipo_sesiones{
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-content: center;
   text-align: center;
   margin: 0%;
@@ -231,7 +231,7 @@ body{
 
 .botones{
   display: flex;
-  flex-direction: row nowrap;
+  flex-direction: row wrap;
   justify-content: center;
   justify-content: space-between;
   align-content: center;
@@ -357,7 +357,7 @@ body{
   font-style:normal;
   text-align: center;
   color:var(--LightViolet);
-  margin-top: 8%;
+  margin-top: auto;
 }
 
 .servicios{
@@ -382,7 +382,7 @@ body{
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   align-content: center;
@@ -401,106 +401,15 @@ body{
 
 /* ------------------------GALERÍA------------------------*/
 
- /*////////////  estilos de Galeria ////////////////////////*/
+ /* Los estilos de Galeria están en la pag estilos3.css*/
   
- .galeria {
-  width:90%;
-  margin-top: 20%;
-  list-style:none;
-  padding:20px;
-  box-sizing:border-box;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content: space-around;
-}
-.galeria li {
-  margin: 5px;
-  }
-  
-.galeria img {
-  width:150px;
-  height:100px;
-}
-
-/* /////////////  estilos del DIV Modal /////////////////////////*/
-.contenedor1 {
-display:none;
- }
-
- .contenedor1:target {
-   display:block;
-   
-/*
-margin:10% 0% 0% 0%; 
-padding: 20px 0px 0px 0px  ;
-*/
- position:fixed;
-  background: rgba(0,0,0,0.8);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height:auto;
- justify-content: center;
-  align-items:center;
-     
-}
-
-.contenedor1_fotos {
-margin: 200px 0px 10px 0px
-background-color: rgba(200,100,100);	
- width: 100%;
-  height: 50%;
- display:flex;
- justify-content: center;
- align-items:center;
-}
-
-.contenedor1_fotos img {
- /* width: 500px;
-  height: 100%;
-  */
-  max-width:100%;
-  border: 5px solid #abc;
-  box-sizing: border-box;
-  }
-
-/*
-.contenedor1_fotos a {
- margin: 0 10px;
-  }
-
-*/
-
-
-.contenedor1_salir img{
-  max-width:100%;
-  border: 5px solid #abc;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items:center;
-  
-  }
-.contenedor1_salir {
-  /*
-  margin:3% 0% 0% 0%; */
- padding: 5px 0px 5px 0px  ;
-
-background-color: rgba(100,100,200);
-  width: 100%;
-  height: 40%;
- display:flex;
- justify-content: center;
-  align-items:center;
-  
-  }
-
 /* ---------------------PREGUNTAS FRECUENTES---------------------*/
 
 .preg{
   width: 70%;
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -508,7 +417,7 @@ background-color: rgba(100,100,200);
 .pregunta{
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: 5%;
   margin-bottom: 4%;
   line-height: 140%;
@@ -518,7 +427,7 @@ background-color: rgba(100,100,200);
   align-items: center;
   font-size: 100%;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: 5%;
   margin-bottom: 4%;
   line-height: 140%;
@@ -527,13 +436,11 @@ background-color: rgba(100,100,200);
 /* ------------------------CONTACTO------------------------*/
 
 .formulario{
-  display: flex;
   flex-direction: column;
   justify-content: center;
   border:1px solid var(--DarkViolet);/*anchura, estilo y color borde*/
   background-color: var(--LightBlue);/*color botón*/
   border-radius: 50px; /*bordes redondos*/
-  margin-top:11%;
   margin-right:6%;
   margin-left:12%;
   padding: 0%;

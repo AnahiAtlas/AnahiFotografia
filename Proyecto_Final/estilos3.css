@@ -1,0 +1,101 @@
+﻿
+ /*////////////  estilos de Galeria ////////////////////////*/
+
+ .galeria {
+	 width:90%;
+	 margin-top:0%;
+	 margin-bottom:0%;
+	 margin-left:10%;
+	 margin-right:10%;
+	 list-style:none;
+	 padding: 1%;
+	 box-sizing:border-box;
+	 display:flex;
+	 flex-wrap: wrap;
+	 flex-direction: row;
+	 justify-content: space-between;
+	 align-items: center;
+ }
+ .galeria li {
+	 margin: 0%;
+	 }
+	 
+ .galeria img {
+	 width:auto;
+	 height:auto;
+	 align-self: center;
+	 }
+ 
+ /* /////////////  estilos Botones /////////////////////////*/
+ 
+ .botones {
+	 width:90%;
+	 margin:auto;
+	 list-style:none;
+	 box-sizing:border-box;
+	 display:flex;
+	 flex-flow:row nowrap;
+	 justify-content: space-around;
+	 align-items: center;
+ }
+
+ .botones li {
+	 margin: 0%;
+	 padding: 0%;
+	 }
+	 
+ .cierre {
+	 width:55%;
+	 margin:auto;
+	 list-style:none;
+	 padding:20px;
+	 box-sizing:border-box;
+	 display:flex;
+	 flex-wrap:wrap;
+	 justify-content: space-around;
+ }
+ .cierre li {
+	 margin: 0%;
+	 }
+	 
+	 
+	 /* /////////////  imagenes de los Botones e Imagen grande /////////////////////////*/
+	 
+#retro1, #avance1, #cierre1 {
+	width:auto;
+	height:auto;
+    padding: 1%; /*espacio alrededor texto*/
+    border-radius: 80px; /*bordes redondos*/
+  }
+
+  #img100 {
+	width:auto;
+	height:auto;
+
+}
+
+
+.footer {
+	text-align: center;
+	font-size: 10%;
+	width: 100%;
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	display: row;
+  }
+    
+  .pie{
+	width: 100%;
+	color: var(--DarkViolet);
+	font-size: large;
+	background-color: #CCC0D8;
+	align-items: center;
+	padding-left: 5%;
+  }
+  
+  .social-link{
+	color: var(--DarkViolet);
+	font-size: large;
+	align-items: center;
+	padding-right: 5%;
+  }
+  

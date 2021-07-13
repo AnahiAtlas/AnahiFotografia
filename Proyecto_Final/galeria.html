@@ -1,424 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>         Portfolio    </title>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Simple line icons-->
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-     <!-- Google fonts-->
-     <link href="https://fonts.google.com/" rel="stylesheet" type="text/css"/>   
-         <!-- CSS media query en un elemento <link> -->
-    <link rel="stylesheet" media="(max-width: 800px)" href="estilos.css" />
-     <link rel="stylesheet" href="estilos.css">
+    <title>Fotos</title>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, user-scalable=no , initial-scale=1, maximun-scale=1, minimun-scale=1" />
+    <link rel="stylesheet" href="estilos.css">
+	 	<link rel="stylesheet" href="estilos3.css">
+	
+	<script type="text/javascript" src="./cambios_galeria.js"></script>
+	<script type="text/javascript" >
 
+	let indice = 0 ;
+	//// CARGAR TODAS LAS IMAGENES EN UN ARRAY  ////
+	let numImg = ["./fotos/Familiares/E2_IMG_6491.jpg","./fotos/Familiares/E_IMG_7019.jpg","./fotos/Familiares/IMG_5861.JPG","./fotos/Familiares/IMG_9748.jpg",  "./fotos/Familiares/IMG_9750.jpg","./fotos/Familiares/IMG_6140.JPG","./fotos/Familiares/E_IMG_7011.jpg","./fotos/Familiares/E_IMG_7001.jpg"]
+			</script>
+	 
 </head>
 
-  <body class="pagina">
+<body class="pagina">
+  
+  <nav class="navbar navbar-expand-lg fixed-top container-fluid" id="mainNav">
+    <div class="logo"><a href="index.html"><img src="./Marca/Icons_Anahi_Foto_180x180.png" alt="Logo"></a></div>
+    <div class="frase">“La fotografía sólo puede representar el presente. Una vez fotografiados, el sujeto,se convierte en parte del pasado.”
+    Berenice Abbott.</div>
+    <div class="menu">
+      <li><a class="nav-link" href="quien soy.html">Acerca de mí</a></li>    
+      <li><a class="nav-link" href="servicios.html">Servicios</a></li>
+      <li><a class="nav-link" href="galeria.html">Galería</a></li>
+      <li><a class="nav-link" href="PreguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+      <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+  </div>
+  <a class="btnVolver" href="index.html">Inicio</a>
+  </nav>
 
-    <!-- Barra de navegacion -->
-    <main class="pagina">
-        <nav class="navbar navbar-expand-lg fixed-top container-fluid" id="mainNav">
-        <div class="logo"><a href="index.html"><img class="logo2" src="./Marca/Anahi-Fotografia-Marca-PNG.svg" alt="Logo"></a></div>
-        <div class="frase">“Lo importante no es cómo el fotógrafo mira el mundo, sino su íntima relación con él.”
-          Antoine D´Agata</div>
-          <div class="menu">
-            <li><a class="nav-link" href="quien soy.html"><i class="bi bi-file-person-fill"></i>Acerca de mí</a></li>    
-            <li><a class="nav-link" href="servicios.html"><i class="bi bi-camera2"></i>Servicios</a></li>
-            <li><a class="nav-link" href="galeria.html"><i class="bi bi-columns-gap"></i>Galería</a></li>
-            <li><a class="nav-link" href="PreguntasFrecuentes.html"><i class="bi bi-patch-question"></i>Preguntas Frecuentes</a></li>
-            <li><a class="nav-link" href="contacto.html"><i class="bi bi-pencil-square"></i>Contacto</a></li>
-        </div>
-        <a class="btnVolver" href="index.html"><i class="bi bi-arrow-left-square-fill">Inicio</i></a>
-    </nav>
+  <ul class="galeria fixed-top">
+  <li> <img src="./fotos/Familiares/E2_IMG_6491.jpg" alt="foto1" onclick="cambi1()"></li>
+  <li> <img src="./fotos/Familiares/E_IMG_7019.jpg" alt="foto2" onclick="cambi2()"> </li>
+  <li> <img src="./fotos/Familiares/IMG_5861.JPG" alt="foto3" onclick="cambi3()"> </li>
+  <li> <img src="./fotos/Familiares/IMG_9748.jpg" alt="foto4" onclick="cambi4()"> </li>
+  <li> <img src="./fotos/Familiares/IMG_9750.jpg" alt="foto5" onclick="cambi5()"> </li>
+  <li> <img src="./fotos/Familiares/IMG_6140.JPG" alt="foto6" onclick="cambi6()"> </li>
+  <li> <img src="./fotos/Familiares/E_IMG_7011.jpg" alt="foto7" onclick="cambi7()"> </li>
+  <li> <img src="./fotos/Familiares/E_IMG_7001.jpg" alt="foto8" onclick="cambi8()"> </li>
+  </ul>
 
-    <!-- Página -->
+ <!-- ///////////////////////////// -->
 
-      <ul class="galeria">
-      <li><a href="#img1" > <img src="./Fotos/Familiares/E_IMG_7001.jpg" alt="foto1" > </a></li>
-      <li><a href="#img2" > <img src="./Fotos/Familiares/E_IMG_7011.jpg" alt="foto2" > </a></li>
-      <li><a href="#img3" > <img src="./Fotos/Familiares/E_IMG_7019.jpg" alt="foto3" > </a></li>
-      <li><a href="#img4" > <img src="./Fotos/Familiares/E2_IMG_6491.jpg" alt="foto4" > </a></li>
-      <li><a href="#img5" > <img src="./Fotos/Familiares/E_IMG_5861.jpg" alt="foto5" > </a></li>
-      <li><a href="#img6" > <img src="./fotos/Familiares/IMG_6140.JPG" alt="foto6" > </a></li>
-      <li><a href="#img7" > <img src="./fotos/Familiares/IMG_9748.jpg" alt="foto7" > </a></li>
-      <li><a href="#img8" > <img src="./fotos/Familiares/IMG_9750.jpg" alt="foto8" > </a></li>
-      </ul>
-     
-     <div class="contenedor1" id="img1" >
-      <div class="contenedor1_fotos" >
-        <a href="#img8"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-        <a href="#img2"> <img width="300" height="300" src="./Fotos/Familiares/E_IMG_7001.jpg" alt="foto" ></a>
-        <a href="#img2"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-      </div>
-      <div class="contenedor1_salir">
-        <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-          </div>
-        </div> 
-          <div class="contenedor1" id="img2" >
-          <div class="contenedor1_fotos" >
-            <a href="#img1"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-            <a href="#img3"> <img width="300" height="300" src="./Fotos/Familiares/E_IMG_7011.jpg" alt="foto" ></a>
-            <a href="#img3"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-          </div>
-          <div class="contenedor1_salir">
-        <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-          </div>
-        </div> 
-        
-        <div class="contenedor1" id="img3" >
-          <div class="contenedor1_fotos" >
-            <a href="#img2"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-            <a href="#img4"> <img width="300" height="300" src="./Fotos/Familiares/E_IMG_7019.jpg" alt="foto" ></a>
-            <a href="#img4"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-          </div>
-          <div class="contenedor1_salir">
-        <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-          </div>
-        </div> 
-        
-        <div class="contenedor1" id="img4" >
-          <div class="contenedor1_fotos" >
-            <a href="#img3"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-            <a href="#img5"> <img width="300" height="300" src="./Fotos/Familiares/E2_IMG_6491.jpg" alt="foto" ></a>
-            <a href="#img5"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-          </div>
-          <div class="contenedor1_salir">
-        <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-          </div>
-        </div> 
-        
-        <div class="contenedor1" id="img5" >
-          <div class="contenedor1_fotos" >
-            <a href="#img4"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-            <a href="#img6"> <img width="300" height="300" src="./Fotos/Familiares/E_IMG_5861.jpg" alt="foto" ></a>
-            <a href="#img6"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-          </div>
-          <div class="contenedor1_salir">
-        <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-          </div>
-        </div> 
-        
-        <div class="contenedor1" id="img6" >
-          <div class="contenedor1_fotos" >
-            <a href="#img5"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-            <a href="#img7"> <img width="300" height="300" src="./fotos/Familiares/IMG_6140.JPG" alt="foto" ></a>
-            <a href="#img7"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-          </div>
-          <div class="contenedor1_salir">
-        <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-          </div>
-        </div> 
-        
-         <div class="contenedor1" id="img7" >
-          <div class="contenedor1_fotos" >
-            <a href="#img6"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-            <a href="#img8"> <img width="300" height="300" src="./fotos/Familiares/IMG_9748.jpg" alt="foto" ></a>
-            <a href="#img8"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-          </div>
-          <div class="contenedor1_salir">
-        <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-          </div>
-        </div> 
-        
-        <div class="contenedor1" id="img8" >
-          <div class="contenedor1_fotos" >
-            <a href="#img7"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-            <a href="#img1"> <img width="300" height="300" src="./fotos/Familiares/IMG_9750.jpg" alt="foto" ></a>
-            <a href="#img1"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-          </div>
-          <div class="contenedor1_salir">
-        <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-          </div>
-        </div> 
-  </section>
-  <div class="botones">
-      <a class="btnQuiero" href="contacto.html">Quiero mi sesión</a>
-   </div>
-
-
-
-   Infantiles
-   Navideñas
-    20x30b.jpg
-    EIMG_5021.jpg
-    IMG_5785.jpg
-    IMG_5871.jpg
-    IMG_9734 (1).jpg
-    IMG_9723.jpg
-   Exterior
-    E_IMG_0823.jpg
-    E_IMG_0887.jpg
-    E_IMG_0905.jpg
-    E_IMG_1149.jpg
-    E_IMG_2860.jpg
-    EDIT_Enzo00000003.jpg
-    EDIT_IMG_9031.jpg
-    EDIT_IMG_9231.jpg
-    IMG_2276.jpg
-   Estudio
-    E_IMG_0548.jpg
-    E_IMG_0551.jpg
-    E_IMG_2366.jpg
-    E_IMG_6355.jpg
-    E_IMG_6908.jpg
-    E_IMG_6997.jpg
-    E_IMG_7382.jpg
-    E_IMG_7393.jpg
-    E_IMG_9760.jpg
-
-
-
-   <ul class="galeria">
-    <li><a href="#img1" > <img src="./fotos/imagen1.jpg" alt="foto1" > </a></li>
-    <li><a href="#img2" > <img src="./fotos/imagen2.jpg" alt="foto2" > </a></li>
-    <li><a href="#img3" > <img src="./fotos/imagen3.jpg" alt="foto3" > </a></li>
-    <li><a href="#img4" > <img src="./fotos/imagen4.jpg" alt="foto4" > </a></li>
-    <li><a href="#img5" > <img src="./fotos/imagen5.jpg" alt="foto5" > </a></li>
-    <li><a href="#img6" > <img src="./fotos/imagen6.jpg" alt="foto6" > </a></li>
-    <li><a href="#img7" > <img src="./fotos/imagen7.jpg" alt="foto7" > </a></li>
-    <li><a href="#img8" > <img src="./fotos/imagen8.jpg" alt="foto8" > </a></li>
-    </ul>
-   
-   <div class="contenedor1" id="img1" >
-    <div class="contenedor1_fotos" >
-      <a href="#img8"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-      <a href="#img2"> <img width="300" height="300" src="./fotos/imagen1.jpg" alt="foto" ></a>
-      <a href="#img2"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-    </div>
-    <div class="contenedor1_salir">
-      <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-        </div>
-      </div> 
-        <div class="contenedor1" id="img2" >
-        <div class="contenedor1_fotos" >
-          <a href="#img1"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-          <a href="#img3"> <img width="300" height="300" src="./fotos/imagen2.jpg" alt="foto" ></a>
-          <a href="#img3"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-        </div>
-        <div class="contenedor1_salir">
-      <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-        </div>
-      </div> 
-      
-      <div class="contenedor1" id="img3" >
-        <div class="contenedor1_fotos" >
-          <a href="#img2"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-          <a href="#img4"> <img width="300" height="300" src="./fotos/imagen3.jpg" alt="foto" ></a>
-          <a href="#img4"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-        </div>
-        <div class="contenedor1_salir">
-      <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-        </div>
-      </div> 
-      
-      <div class="contenedor1" id="img4" >
-        <div class="contenedor1_fotos" >
-          <a href="#img3"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-          <a href="#img5"> <img width="300" height="300" src="./fotos/imagen4.jpg" alt="foto" ></a>
-          <a href="#img5"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-        </div>
-        <div class="contenedor1_salir">
-      <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-        </div>
-      </div> 
-      
-      <div class="contenedor1" id="img5" >
-        <div class="contenedor1_fotos" >
-          <a href="#img4"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-          <a href="#img6"> <img width="300" height="300" src="./fotos/imagen5.jpg" alt="foto" ></a>
-          <a href="#img6"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-        </div>
-        <div class="contenedor1_salir">
-      <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-        </div>
-      </div> 
-      
-      <div class="contenedor1" id="img6" >
-        <div class="contenedor1_fotos" >
-          <a href="#img5"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-          <a href="#img7"> <img width="300" height="300" src="./fotos/imagen6.jpg" alt="foto" ></a>
-          <a href="#img7"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-        </div>
-        <div class="contenedor1_salir">
-      <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-        </div>
-      </div> 
-      
-      <div class="contenedor1" id="img7" >
-        <div class="contenedor1_fotos" >
-          <a href="#img6"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-          <a href="#img8"> <img width="300" height="300" src="./fotos/imagen7.jpg" alt="foto" ></a>
-          <a href="#img8"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-        </div>
-        <div class="contenedor1_salir">
-      <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-        </div>
-      </div> 
-      
-      <div class="contenedor1" id="img8" >
-        <div class="contenedor1_fotos" >
-          <a href="#img7"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-          <a href="#img1"> <img width="300" height="300" src="./fotos/imagen8.jpg" alt="foto" ></a>
-          <a href="#img1"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-        </div>
-        <div class="contenedor1_salir">
-      <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-        </div>
-      </div> 
-</section>
-<div class="botones">
-    <a class="btnQuiero" href="contacto.html">Quiero mi sesión</a>
- </div>
-
-
-
- Maternidad
- E_IMG_6484.jpg
- E_IMG_8145.jpg
- E_IMG_6490.jpg
- E_IMG_8147.jpg
- E_IMG_8208.jpg
- E2_IMG_6482.jpg
- E_IMG_8150.jpg
- E_IMG_8159.jpg
- E_IMG_8184.jpg
-
- <ul class="galeria">
-  <li><a href="#img1" > <img src="./fotos/imagen1.jpg" alt="foto1" > </a></li>
-  <li><a href="#img2" > <img src="./fotos/imagen2.jpg" alt="foto2" > </a></li>
-  <li><a href="#img3" > <img src="./fotos/imagen3.jpg" alt="foto3" > </a></li>
-  <li><a href="#img4" > <img src="./fotos/imagen4.jpg" alt="foto4" > </a></li>
-  <li><a href="#img5" > <img src="./fotos/imagen5.jpg" alt="foto5" > </a></li>
-  <li><a href="#img6" > <img src="./fotos/imagen6.jpg" alt="foto6" > </a></li>
-  <li><a href="#img7" > <img src="./fotos/imagen7.jpg" alt="foto7" > </a></li>
-  <li><a href="#img8" > <img src="./fotos/imagen8.jpg" alt="foto8" > </a></li>
+ <ul class="botones" id="botones1" >
+<li> <img id="retro1" src="./fotos/atras3.jpg" alt="avanzar"  onclick="cambio1()" ></li>
+<li> <img id="img100" src="./fotos/Familiares/E2_IMG_6491.jpg" alt="foto" ></li>
+<li> <img id="avance1" src="./fotos/adelante3.jpg" alt="retroceder" onclick="cambio2()"> </li>
+  </ul>
+  <ul class="cierre" id="botones2">
+<li> <img id="cierre1" src="./fotos/salir1.jpg" alt="salir"  onclick="cerrar()" ></li>
   </ul>
  
- <div class="contenedor1" id="img1" >
-  <div class="contenedor1_fotos" >
-    <a href="#img8"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-    <a href="#img2"> <img width="300" height="300" src="./fotos/imagen1.jpg" alt="foto" ></a>
-    <a href="#img2"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-  </div>
-  <div class="contenedor1_salir">
-    <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-      </div>
-    </div> 
-      <div class="contenedor1" id="img2" >
-      <div class="contenedor1_fotos" >
-        <a href="#img1"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-        <a href="#img3"> <img width="300" height="300" src="./fotos/imagen2.jpg" alt="foto" ></a>
-        <a href="#img3"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-      </div>
-      <div class="contenedor1_salir">
-    <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-      </div>
-    </div> 
-    
-    <div class="contenedor1" id="img3" >
-      <div class="contenedor1_fotos" >
-        <a href="#img2"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-        <a href="#img4"> <img width="300" height="300" src="./fotos/imagen3.jpg" alt="foto" ></a>
-        <a href="#img4"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-      </div>
-      <div class="contenedor1_salir">
-    <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-      </div>
-    </div> 
-    
-    <div class="contenedor1" id="img4" >
-      <div class="contenedor1_fotos" >
-        <a href="#img3"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-        <a href="#img5"> <img width="300" height="300" src="./fotos/imagen4.jpg" alt="foto" ></a>
-        <a href="#img5"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-      </div>
-      <div class="contenedor1_salir">
-    <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-      </div>
-    </div> 
-    
-    <div class="contenedor1" id="img5" >
-      <div class="contenedor1_fotos" >
-        <a href="#img4"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-        <a href="#img6"> <img width="300" height="300" src="./fotos/imagen5.jpg" alt="foto" ></a>
-        <a href="#img6"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-      </div>
-      <div class="contenedor1_salir">
-    <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-      </div>
-    </div> 
-    
-    <div class="contenedor1" id="img6" >
-      <div class="contenedor1_fotos" >
-        <a href="#img5"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-        <a href="#img7"> <img width="300" height="300" src="./fotos/imagen6.jpg" alt="foto" ></a>
-        <a href="#img7"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-      </div>
-      <div class="contenedor1_salir">
-    <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-      </div>
-    </div> 
-    
-    <div class="contenedor1" id="img7" >
-      <div class="contenedor1_fotos" >
-        <a href="#img6"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-        <a href="#img8"> <img width="300" height="300" src="./fotos/imagen7.jpg" alt="foto" ></a>
-        <a href="#img8"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-      </div>
-      <div class="contenedor1_salir">
-    <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-      </div>
-    </div> 
-    
-    <div class="contenedor1" id="img8" >
-      <div class="contenedor1_fotos" >
-        <a href="#img7"> <img width="50" height="50"  src="./fotos/atras12.jpg" alt="avanzar" ></a> 
-        <a href="#img1"> <img width="300" height="300" src="./fotos/imagen8.jpg" alt="foto" ></a>
-        <a href="#img1"> <img width="50" height="50" src="./fotos/adelante12.jpg" alt="retroceder"></a> 
-      </div>
-      <div class="contenedor1_salir">
-    <a href=""> <img  width="50" height="50"  src="./fotos/salir32.jpg" alt="salir" > </a>			
-      </div>
-    </div> 
-</section>
-<div class="botones">
-  <a class="btnQuiero" href="contacto.html">Quiero mi sesión</a>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- Footer -->
-    <footer class="footer py-4">
-     <div class="pie">
-      <div class="row align-items-center">
-          <div class="col-lg-4 text-lg-start">Copyright © Anahi Atlas 2021            </div>
-          <div class="col-lg-4 my-3 my-lg-0">
-              <a class="social-link rounded-circle mr-3" href="https://www.facebook.com/AnahiFoto"><i class="icon-social-facebook"></i></a>
-              <a class="social-link rounded-circle mr-3" href="tel:+1163037388"><i class="bi bi-whatsapp"></i></a>
-              <a class="social-link rounded-circle mr-3" href="mailto:anahifotografia01@gmail.com"><i class="bi bi-mailbox"></i></a>
-              <a class="social-link rounded-circle mr-3" href="https://www.instagram.com/AnahiFoto"><i class="icon-social-instagram"></i></a>
-              <a class="social-link rounded-circle mr-3" href="https://t.me/AnahiFotografia"><i class="bi bi-telegram"></i></a>
-          </div>
+<footer class="footer py-4">
+    <section class="pie">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-start">Copyright © Anahi Atlas 2021            </div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="social-link rounded-circle mr-3" href="https://www.facebook.com/AnahiFoto"><i class="icon-social-facebook"></i></a>
+                <a class="social-link rounded-circle mr-3" href="tel:+1163037388"><i class="bi bi-whatsapp"></i></a>
+                <a class="social-link rounded-circle mr-3" href="mailto:anahifotografia01@gmail.com"><i class="bi bi-mailbox"></i></a>
+                <a class="social-link rounded-circle mr-3" href="https://www.instagram.com/AnahiFoto"><i class="icon-social-instagram"></i></a>
+                <a class="social-link rounded-circle mr-3" href="https://t.me/AnahiFotografia"><i class="bi bi-telegram"></i></a>
+            </div>
         </div>
-    </div>
-    </footer>
-  </main>
-</body></html>
+    </section>
+</footer>
+  
+ </body>
+
+</html>
