@@ -1,0 +1,570 @@
+@charset "UTF-8"; :root {
+  --DarkViolet: #1E122A;
+  --Violet: #4D3D6E;
+  --LightViolet: #CCC0D8;
+   --LightBlue: #7AAFF3;
+   --Blue:  #1856B9;
+   /*--font-family: Noto Serif script=latin rev=2;*/
+   --bs-gradient: (#CCC0D8, #7AAFF3, #1856B9);
+ }
+ 
+ * {
+   margin: 0%;
+   padding: 0%;
+}
+
+body{
+ background-color: var(--DarkViolet); 
+ margin: auto;
+ padding: auto;
+ display: flex;
+}
+
+/* ------------------------INDEX ------------------------*/
+
+#mainNav {
+  background-color: #CCC0D8;
+  display:flex;
+  flex-direction: row;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content:center;
+  padding:1%;
+}
+
+.logo img{
+  flex-flow: row nowrap;
+  margin-left: 5%;
+  width: 20vw;
+}
+
+.frase{
+  font-style: italic;
+  font-variant: small-caps;
+  font-size: large;
+  color:var(--Blue);
+  text-align: center;
+  width: 40vw;
+  padding-left: 3%;
+}
+
+.menu{
+  color: #1E122A;
+  width: 65%;
+  height: 60%;
+  display: flex;
+  flex-direction:row;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+}
+
+.menu li {
+  display:inline; 
+  color:#1E122A;
+}
+
+.nav-link{
+  color: #1E122A;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-link:hover,.btnQuiero:hover,.btnSaberMas:hover,.btnVolver:hover{
+  background-color:lightgray;
+  color: var(--LightBlue);
+  text-decoration:none;
+ }
+ 
+
+.pagina{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: var(--DarkViolet); 
+  margin: auto;
+  padding: auto;
+  justify-content: center;
+}
+
+.cabecera{
+  color:var(--LightViolet);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 5%;
+  margin: 6%;
+  text-align: center;
+}
+
+  .cabecera h3{
+    align-self: center;
+    padding-top: 14%;
+    width: auto;
+    margin: auto;
+  }
+  
+  .cabecera h1{
+    font-weight:500;
+    text-transform: uppercase;
+  }
+
+  .btnQuiero,.btns,.btnSaberMas,.btnVolver{
+    text-decoration: none; 
+    color:#CCC0D8;/*color texto*/
+    border: 1px solid var(--DarkViolet);/*anchura, estilo y color borde*/
+    background-color: #1856B9;/*color botón*/
+    padding: 1%; /*espacio alrededor texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    border-radius: 50px; /*bordes redondos*/
+  }
+
+  .btnQuiero{
+    float: center;
+  }
+
+  .btnQuiero:hover {
+    background-color:lightgray;
+    color: var(--LightBlue);
+  }
+
+
+.presentacion{
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #7AAFF3;
+  padding-bottom: 1%;
+}
+
+.presentacion h1{
+  text-align: center;
+  color: #7AAFF3;
+}
+
+.intro{
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.anahi_img{
+  width: 25vw;
+  float: left;
+  margin: 3%;
+}
+
+.quiensoy{
+  align-content: center;
+  align-self: center;
+  width: 90vw;
+  padding-top: 7%;
+  margin: 2%;
+}
+
+.btnSaberMas{
+    text-decoration: none; 
+    color:#CCC0D8;/*color texto*/
+    border:1px solid var(--DarkViolet);/*anchura, estilo y color borde*/
+    background-color: #1856B9;/*color botón*/
+    padding-left: 2%; /*espacio alrededor texto*/
+    padding-right: 2%; /*espacio alrededor texto*/
+    padding-top: auto; /*espacio alrededor texto*/
+    padding-bottom: auto; /*espacio alrededor texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    border-radius: 30px; /*bordes redondos*/
+    float: right;
+    margin-top: 2%;
+  }
+
+  .btnSaberMas:hover {
+    background-color:lightgray;
+    color: var(--LightBlue);
+    text-decoration:none;
+  }
+
+.tipo_sesiones{
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+}
+
+  .tipo_sesiones h2{
+    color:var(--LightViolet);
+    align-items: center;
+    padding: auto;
+    margin: 1%;
+  }
+
+  .anclas{
+    text-decoration: none;
+    color: #CCC0D8;
+  }
+
+  .anclas:hover {
+    background-color:lightgray;
+    color: var(--LightBlue);
+    text-decoration:none;
+  }
+
+  .item{
+    padding: 1%;
+    align-items: center;
+}
+
+
+.figura{
+  padding-bottom: 1%;
+  margin: 0%;
+  padding: auto;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+}
+
+.foto{
+  width: 100%;
+}
+
+.botones{
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  justify-content: space-between;
+  align-content: center;
+  width: 40%;
+  margin-left: 25%;
+  margin-right: 25%;
+  }
+
+  .btns{
+    align-content: center;
+    align-self: center;
+  }
+
+.footer {
+  text-align: center;
+  font-size: 10%;
+  width: 100%;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: row;
+}
+
+.mapa{
+  align-items: center;
+  font-size: large;
+  color: #CCC0D8
+}
+
+.donde{
+  text-align: center;
+  color:var(--LightViolet);
+  font-size: xx-large;
+  color: #CCC0D8;
+}
+
+.pie{
+  width: 100%;
+  color: var(--DarkViolet);
+  font-size: large;
+  background-color: #CCC0D8;
+  align-items: center;
+  padding-left: 5%;
+}
+
+.social-link{
+  color: var(--DarkViolet);
+  font-size: large;
+  align-items: center;
+  padding-right: 5%;
+}
+
+
+
+/* .piefoto{
+    width: 80%;
+    margin: auto;
+    padding: auto;
+  }
+
+
+  /*.subtitulo{
+    font-style: normal;
+    font-size: xx-large;
+    text-align: center;
+    color: var(--LightViolet);
+  }
+  */
+  
+
+/* ------------------------ACERCA DE MÍ------------------------*/
+
+.btnVolver{
+  color:#CCC0D8;/*color texto*/
+  font-size: x-large;
+  border:1px solid var(--DarkViolet);/*anchura, estilo y color borde*/
+  background-color: #1856B9;/*color botón*/
+  text-transform: uppercase; /*capitalización texto*/
+  border-radius: 50px; /*bordes redondos*/
+  float: left;
+}
+
+.MiNombre{
+  width: 100%;
+  color: #7AAFF3;
+  margin-top:10%;
+  text-align: center;
+}
+
+
+/*
+.MiNombre anahi_img{
+  padding: 0%;
+  margin: 0%;
+}
+
+.imagenes{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+  align-items: center;
+  padding-right: 15%;
+  padding-left: 5%;
+  width: 100%;
+}
+
+.anahi_img2{
+  width: 30%;
+  float: right;
+  margin: 50px;
+  align-self: center;
+}
+
+.texto{
+  width: 67%;
+  margin-left: 4%;
+  padding: 0%;
+  align-self: center;
+}
+
+/* ------------------------SERVICIOS------------------------*/
+
+
+.tipo_sesiones{
+  font-style:normal;
+  text-align: center;
+  color:var(--LightViolet);
+  margin-top: 8%;
+}
+
+.servicios{
+  font-style:normal;
+  text-align: center;
+  color:var(--LightViolet);
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.intro_serv{
+  color: var(--LightViolet);
+  width: 93%;
+}
+
+.Paquetes{
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.aclaracion{
+  font-style: italic;
+  text-align: center;
+  width: 90%;
+  color:var(--Blue);
+  margin-left: 4%;
+  margin-right: 4%;
+  padding: 0%;
+  align-self: center;
+}
+
+/* ------------------------GALERÍA------------------------*/
+
+ /*////////////  estilos de Galeria ////////////////////////*/
+  
+ .galeria {
+  width:90%;
+  margin-top: 20%;
+  list-style:none;
+  padding:20px;
+  box-sizing:border-box;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+.galeria li {
+  margin: 5px;
+  }
+  
+.galeria img {
+  width:150px;
+  height:100px;
+}
+
+/* /////////////  estilos del DIV Modal /////////////////////////*/
+.contenedor1 {
+display:none;
+ }
+
+ .contenedor1:target {
+   display:block;
+   
+/*
+margin:10% 0% 0% 0%; 
+padding: 20px 0px 0px 0px  ;
+*/
+ position:fixed;
+  background: rgba(0,0,0,0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:auto;
+ justify-content: center;
+  align-items:center;
+     
+}
+
+.contenedor1_fotos {
+margin: 200px 0px 10px 0px
+background-color: rgba(200,100,100);	
+ width: 100%;
+  height: 50%;
+ display:flex;
+ justify-content: center;
+ align-items:center;
+}
+
+.contenedor1_fotos img {
+ /* width: 500px;
+  height: 100%;
+  */
+  max-width:100%;
+  border: 5px solid #abc;
+  box-sizing: border-box;
+  }
+
+/*
+.contenedor1_fotos a {
+ margin: 0 10px;
+  }
+
+*/
+
+
+.contenedor1_salir img{
+  max-width:100%;
+  border: 5px solid #abc;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items:center;
+  
+  }
+.contenedor1_salir {
+  /*
+  margin:3% 0% 0% 0%; */
+ padding: 5px 0px 5px 0px  ;
+
+background-color: rgba(100,100,200);
+  width: 100%;
+  height: 40%;
+ display:flex;
+ justify-content: center;
+  align-items:center;
+  
+  }
+
+/* ---------------------PREGUNTAS FRECUENTES---------------------*/
+
+.preg{
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.pregunta{
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 5%;
+  margin-bottom: 4%;
+  line-height: 140%;
+}
+
+.respuesta{
+  align-items: center;
+  font-size: 100%;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 5%;
+  margin-bottom: 4%;
+  line-height: 140%;
+}
+
+/* ------------------------CONTACTO------------------------*/
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border:1px solid var(--DarkViolet);/*anchura, estilo y color borde*/
+  background-color: var(--LightBlue);/*color botón*/
+  border-radius: 50px; /*bordes redondos*/
+  margin-top:11%;
+  margin-right:6%;
+  margin-left:12%;
+  padding: 0%;
+  width: 75%;
+}
+
+.formulario h1{
+  color: #4D3D6E;
+  margin-top: -6%;
+}
+
+.form{
+  width: 60%;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3%;
+  margin-left: 18%;
+  color: #4D3D6E;
+}
+
+label{
+  font-size: x-large;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  align-content: center;
+  align-self: center;
+  background-color: transparent;
+}
+
+.form-control{
+  font-size: large;
+  margin-bottom: 1%;
+}
