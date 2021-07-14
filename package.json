@@ -1,0 +1,24 @@
+{
+  "name": "anahi_foto",
+  "version": "1.0.0",
+  "description": "app conectada a bbdd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnahiAtlas/AnahiFotografia.git"
+  },
+  "author": "Anahi Atlas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnahiAtlas/AnahiFotografia/issues"
+  },
+  "homepage": "https://github.com/AnahiAtlas/AnahiFotografia#readme",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.12"
+  }
+}

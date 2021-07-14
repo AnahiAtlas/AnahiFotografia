@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <title>Fotos</title>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, user-scalable=no , initial-scale=1, maximun-scale=1, minimun-scale=1" />
+    <link rel="stylesheet" href="estilos.css">
+	 	<link rel="stylesheet" href="estilos3.css">
+	
+	<script type="text/javascript" src="./cambios_galeria.js"></script>
+	<script type="text/javascript" >
+
+	let indice = 0 ;
+	/*---- CARGAR TODAS LAS IMAGENES EN UN ARRAY  ----*/
+	let numImg = ["./Fotos/Familiares/E2_IMG_6491.jpg","./Fotos/Familiares/E_IMG_7019.jpg","./Fotos/Familiares/IMG_5861.JPG","./Fotos/Familiares/IMG_9748.jpg",  "./Fotos/Familiares/IMG_9750.jpg","./Fotos/Familiares/IMG_6140.JPG","./Fotos/Familiares/E_IMG_7011.jpg","./Fotos/Familiares/E_IMG_7001.jpg"]
+			</script>
+	 
+</head>
+
+<body>
+  <main class="pagina">
+  <nav class="navbar navbar-expand-lg fixed-top container-fluid" id="mainNav">
+    <div class="logo"><a href="index.html"><img src="./Marca/Icons_Anahi_Foto_180x180.png" alt="Logo"></a></div>
+    <div class="frase">“La fotografía sólo puede representar el presente. Una vez fotografiados, el sujeto,se convierte en parte del pasado.”
+    Berenice Abbott.</div>
+    <div class="menu">
+        <li><a class="nav-link" href="index.html">Inicio</a></li>    
+        <li><a class="nav-link" href="quien soy.html">Acerca de mí</a></li>    
+        <li><a class="nav-link" href="servicios.html">Servicios</a></li>
+        <li><a class="nav-link" href="galeria.html">Galería</a></li>
+        <li><a class="nav-link" href="PreguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+        <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+  </div>
+  </nav>
+
+  <ul class="galeria fixed-top">
+  <li> <img src="./Fotos/Familiares/E2_IMG_6491.jpg" alt="foto1" onclick="cambi1()"></li>
+  <li> <img src="./Fotos/Familiares/E_IMG_7019.jpg" alt="foto2" onclick="cambi2()"> </li>
+  <li> <img src="./Fotos/Familiares/IMG_5861.JPG" alt="foto3" onclick="cambi3()"> </li>
+  <li> <img src="./Fotos/Familiares/IMG_9748.jpg" alt="foto4" onclick="cambi4()"> </li>
+  <li> <img src="./Fotos/Familiares/IMG_9750.jpg" alt="foto5" onclick="cambi5()"> </li>
+  <li> <img src="./Fotos/Familiares/IMG_6140.JPG" alt="foto6" onclick="cambi6()"> </li>
+  <li> <img src="./Fotos/Familiares/E_IMG_7011.jpg" alt="foto7" onclick="cambi7()"> </li>
+  <li> <img src="./Fotos/Familiares/E_IMG_7001.jpg" alt="foto8" onclick="cambi8()"> </li>
+  </ul>
+
+ <!-- Botones -->
+
+ <div class="botonera">
+    <ul class="botones" id="botones1" >
+    <li> <img id="retro1" src="./Fotos/atras3.jpg" alt="avanzar"  onclick="cambio1()" ></li>
+    <li> <img id="img100" src="./Fotos/Familiares/E2_IMG_6491.jpg" alt="foto" ></li>
+    <li> <img id="avance1" src="./Fotos/adelante3.jpg" alt="retroceder" onclick="cambio2()"> </li>
+    </ul>  
+    <ul class="cierre" id="botones2">
+    <li> <img id="cierre1" src="./Fotos/salir1.jpg" alt="salir"  onclick="cerrar()" ></li>
+    </ul>
+</div>
+<footer class="footer py-4">
+    <section class="pie">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-start">Copyright © Anahi Atlas 2021            </div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="social-link rounded-circle mr-3" href="https://www.facebook.com/AnahiFoto"><i class="icon-social-facebook"></i></a>
+                <a class="social-link rounded-circle mr-3" href="tel:+1163037388"><i class="bi bi-whatsapp"></i></a>
+                <a class="social-link rounded-circle mr-3" href="mailto:anahifotografia01@gmail.com"><i class="bi bi-mailbox"></i></a>
+                <a class="social-link rounded-circle mr-3" href="https://www.instagram.com/AnahiFoto"><i class="icon-social-instagram"></i></a>
+                <a class="social-link rounded-circle mr-3" href="https://t.me/AnahiFotografia"><i class="bi bi-telegram"></i></a>
+            </div>
+        </div>
+    </section>
+</footer>
+</main>
+ </body>
+
+</html>
